@@ -1,0 +1,6 @@
+# envinronment folder 
+/env
+
+
+# pycache folder
+__pycache__
