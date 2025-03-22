@@ -24,9 +24,8 @@ const connector = new ElasticsearchAPIConnector(
   // modify the request body to include a multi_match query as duration is a double 
   (requestBody, requestState, queryConfig) => {
 
-
     if (!requestState.searchTerm) return requestBody;
-
+    // define the fields to search as required
     const searchFields = [
       "generated_text",
       "age",
@@ -34,7 +33,7 @@ const connector = new ElasticsearchAPIConnector(
       "accent",
       "duration"
     ];
-
+    // lenient is set to true to match the query as duration expects a double
     requestBody.query = {
       multi_match: {
         query: requestState.searchTerm,

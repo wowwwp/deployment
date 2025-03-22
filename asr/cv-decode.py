@@ -19,6 +19,7 @@ def post_req():
     '''Post request to the ASR API'''
     # Get all mp3 files in the directory
     url = 'http://localhost:8001/asr'
+    # ADJUST THE PATH BASED ON THE LOCATION OF cv-calid-dev FOLDER
     all_files = os.listdir('../../cv-valid-dev')
     all_transcription = {}
     # Post request to the ASR API for the transcription and duration
