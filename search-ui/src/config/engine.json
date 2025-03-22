@@ -1,0 +1,19 @@
+{
+  "endpointBase": "https://localhost:3000",
+  "engineName": "cv-transcriptions",
+  "searchFields": [
+    "generated_text",
+    "duration",
+    "age",
+    "gender",
+    "accent"
+  ],
+  "querySuggestFields": [
+    "generated_text",
+    "duration",
+    "age",
+    "gender",
+    "accent"
+  ],
+  "titleField": "id"
+}
