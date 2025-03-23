@@ -49,12 +49,6 @@ const connector = new ElasticsearchAPIConnector(
 
 const config = {
   searchQuery: {
-    search_fields: {
-      generated_text: {},
-      age: {},
-      gender: {},
-      accent: {}
-    },
     result_fields: {
       generated_text: {
         snippet: {
@@ -69,6 +63,9 @@ const config = {
         raw: {}
       },
       accent: {
+        raw: {}
+      },
+      gender: {
         raw: {}
       }
     },
