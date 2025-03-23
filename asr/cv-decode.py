@@ -24,8 +24,9 @@ def post_req():
     all_transcription = {}
     # Post request to the ASR API for the transcription and duration
     for file in all_files:
-        output = requests.post(
-            url, data={'file': f'./cv-valid-dev/{file}'}, timeout=60)
+        with open(f'../../cv-valid-dev/{file}', 'rb') as f:
+            output = requests.post(
+                url, files={'file': f}, timeout=60)
         if output.status_code == 200:
             all_transcription[f"cv-valid-dev/{file}"] = output.json()
     return all_transcription
