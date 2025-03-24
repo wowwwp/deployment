@@ -18,7 +18,7 @@ import "@elastic/react-search-ui-views/lib/styles/styles.css";
 
 const connector = new ElasticsearchAPIConnector(
   {
-    host: "http://3.104.109.157:9200/",
+    host: "http://54.79.54.184:9200/",
     index: "cv-transcriptions",
   },
   // modify the request body to include a multi_match query as duration is a double 
