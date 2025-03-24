@@ -1,7 +1,7 @@
 from elasticsearch import Elasticsearch, helpers
 import pandas as pd
 
-client = Elasticsearch("http://3.104.109.157:9200")
+client = Elasticsearch("http://54.79.54.184:9200/")
 
 # Create an index if it doesnt exist
 if not client.indices.exists(index="cv-transcriptions"):
