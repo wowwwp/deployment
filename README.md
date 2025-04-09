@@ -1,6 +1,6 @@
 # deployment
 
-The deployment url is http://13.54.117.136:3000. 
+The service was deployed at http://13.54.117.136:3000, which is now offline.
 
 ## Set-up
 
